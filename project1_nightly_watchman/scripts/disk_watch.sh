@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Setting the place for logs
-LOG_DIR="/home/devops_junior/nightly_watchman/logs"
+LOG_DIR="/home/devops_junior/tasks/learn/project1_nightly_watchman/logs"
 
 #Creating timeStamp
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
