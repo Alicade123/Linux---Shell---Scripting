@@ -1,0 +1,13 @@
+Name: Alan Grant      Occupation: Paleontologist   Species: Human
+Name: Batman          Occupation: Vigilante        Species: Human
+Name: Dalek           Occupation: Dalek            Species: Dalek
+Name: Doctor          Occupation: Time Traveler    Species: Time Lord
+Name: Donatello       Occupation: Ninja            Species: Mutant Turtle
+Name: Kefka           Occupation: Court Mage       Species: Human
+Name: Kirby           Occupation: Cute Pink Puff   Species: Kirby
+Name: Leonardo        Occupation: Ninja            Species: Mutant Turtle
+Name: Michelangelo    Occupation: Ninja            Species: Mutant Turtle
+Name: Raphael         Occupation: Ninja            Species: Mutant Turtle
+Name: Riddler         Occupation: Super Villian    Species: Human
+Name: Samus           Occupation: Bounty Hunger    Species: Human
+Name: Terra           Occupation: Hero             Species: Esper
