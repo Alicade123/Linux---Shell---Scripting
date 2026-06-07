@@ -1,0 +1,72 @@
+#!/bin/bash
+# ==============================================================================
+# COURSE REFERENCE: RSLX EN-US SG M02 SOFTWARE MANAGEMENT
+# DESCRIPTION: Reference script covering package managers and installation lifecycle.
+# USAGE: Read as a guide or run directly: bash rslx_m02_software_mgmt.sh
+# ==============================================================================
+
+clear
+echo "=============================================================================="
+echo "               RSLX M02 SOFTWARE MANAGEMENT REFERENCE MANUAL"
+echo "=============================================================================="
+
+# ------------------------------------------------------------------------------
+# 1. WHAT IS A PACKAGE MANAGER?
+# ------------------------------------------------------------------------------
+echo -e "\n--> 1. THE ROLE OF PACKAGE MANAGERS"
+echo "• Automates the process of installing, upgrading, configuring, and removing software."
+echo "• Eliminates the need to manually download source code and compile binaries."
+echo "• Maintains a local database of installed applications and their specific versions."
+
+
+# ------------------------------------------------------------------------------
+# 2. THE CORE PROBLEM SOLVED: DEPENDENCY RESOLUTION
+# ------------------------------------------------------------------------------
+echo -e "\n--> 2. DEPENDENCY RESOLUTION"
+echo "• Software often relies on shared libraries or other programs to function (dependencies)."
+echo "• Advanced package managers automatically find and install these requirements."
+echo "• Prevents 'dependency hell' by verifying that all prerequisites match required versions."
+
+
+# ------------------------------------------------------------------------------
+# 3. HIGH-LEVEL VS. LOW-LEVEL TOOLS
+# ------------------------------------------------------------------------------
+echo -e "\n--> 3. PACKAGE MANAGEMENT TOOLS ARCHITECTURE"
+echo "=============================================================================="
+echo " TYPE       | RED HAT ECOSYSTEM (RHEL/CentOS)   | DEBIAN ECOSYSTEM (Ubuntu)"
+echo "=============================================================================="
+echo " High-Level | yum / dnf                         | apt / apt-get"
+echo " Features   | Resolves dependencies via repos.  | Resolves dependencies via repos."
+echo "------------+-----------------------------------+-------------------------"
+echo " Low-Level  | rpm                               | dpkg"
+echo " Features   | Installs local files directly.   | Installs local files directly."
+echo "            | Fails if dependencies are missing.| Fails if dependencies are missing."
+echo "=============================================================================="
+
+
+# ------------------------------------------------------------------------------
+# 4. FREQUENTLY USED COMMANDS (YUM/DNF SYNTAX)
+# ------------------------------------------------------------------------------
+echo -e "\n--> 4. REPOSITORIES AND ESSENTIAL COMMANDS"
+echo "• Repositories (repos) are remote storage locations where software packages reside."
+
+echo -e "\nCommon Administration Syntax:"
+echo "  yum check-update  -> Checks for available software updates in active repos."
+echo "  yum update        -> Downloads and installs all available system updates."
+echo "  yum install [pkg] -> Downloads and installs a specific package + dependencies."
+echo "  yum remove [pkg]  -> Uninstalls a package from the system."
+echo "  yum search [str]  -> Searches repository metadata for keyword matches."
+
+
+# ------------------------------------------------------------------------------
+# 5. KEY TAKEAWAYS SUMMARY
+# ------------------------------------------------------------------------------
+echo -e "\n=============================================================================="
+echo "                          CRITICAL KNOWLEDGE CHECK"
+echo "=============================================================================="
+echo "• Package managers maintain system stability by tracking application files."
+echo "• Local package managers require an active network connection to talk to repos."
+echo "• High-level managers verify security signatures (GPG keys) before installing."
+echo "=============================================================================="
+
+echo -e "\nManual loaded successfully."
